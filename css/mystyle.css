@@ -2,3 +2,7 @@
   display: inline-block;
   font-size: 8px;
 }
+
+.container-fluid {
+  max-width: 1780px;
+}

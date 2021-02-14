@@ -8,7 +8,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -45,7 +46,7 @@ hr:not([size]) {
   height: 1px;
 }
 
-h6, h5, h4, h3, h2, h1 {
+h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -53,8 +54,10 @@ h6, h5, h4, h3, h2, h1 {
 }
 
 h1 {
+  font-size: -webkit-calc(1.375rem + 1.5vw);
   font-size: calc(1.375rem + 1.5vw);
 }
+
 @media (min-width: 1200px) {
   h1 {
     font-size: 2.5rem;
@@ -62,8 +65,10 @@ h1 {
 }
 
 h2 {
+  font-size: -webkit-calc(1.325rem + 0.9vw);
   font-size: calc(1.325rem + 0.9vw);
 }
+
 @media (min-width: 1200px) {
   h2 {
     font-size: 2rem;
@@ -71,8 +76,10 @@ h2 {
 }
 
 h3 {
+  font-size: -webkit-calc(1.3rem + 0.6vw);
   font-size: calc(1.3rem + 0.6vw);
 }
+
 @media (min-width: 1200px) {
   h3 {
     font-size: 1.75rem;
@@ -80,8 +87,10 @@ h3 {
 }
 
 h4 {
+  font-size: -webkit-calc(1.275rem + 0.3vw);
   font-size: calc(1.275rem + 0.3vw);
 }
+
 @media (min-width: 1200px) {
   h4 {
     font-size: 1.5rem;
@@ -105,9 +114,8 @@ abbr[title],
 abbr[data-bs-original-title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
   cursor: help;
-  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 
@@ -141,7 +149,7 @@ dt {
 }
 
 dd {
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   margin-left: 0;
 }
 
@@ -172,17 +180,18 @@ sup {
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -.25em;
 }
 
 sup {
-  top: -0.5em;
+  top: -.5em;
 }
 
 a {
   color: #0d6efd;
   text-decoration: underline;
 }
+
 a:hover {
   color: #0a58ca;
 }
@@ -209,6 +218,7 @@ pre {
   overflow: auto;
   font-size: 0.875em;
 }
+
 pre code {
   font-size: inherit;
   color: inherit;
@@ -220,6 +230,7 @@ code {
   color: #d63384;
   word-wrap: break-word;
 }
+
 a > code {
   color: inherit;
 }
@@ -229,8 +240,10 @@ kbd {
   font-size: 0.875em;
   color: #fff;
   background-color: #212529;
-  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+          border-radius: 0.2rem;
 }
+
 kbd kbd {
   padding: 0;
   font-size: 1em;
@@ -279,7 +292,8 @@ label {
 }
 
 button {
-  border-radius: 0;
+  -webkit-border-radius: 0;
+          border-radius: 0;
 }
 
 button:focus:not(:focus-visible) {
@@ -302,7 +316,7 @@ select {
   text-transform: none;
 }
 
-[role=button] {
+[role="button"] {
   cursor: pointer;
 }
 
@@ -315,15 +329,16 @@ select {
 }
 
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
+
 button:not(:disabled),
-[type=button]:not(:disabled),
-[type=reset]:not(:disabled),
-[type=submit]:not(:disabled) {
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
   cursor: pointer;
 }
 
@@ -348,14 +363,17 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 0.5rem;
+  font-size: -webkit-calc(1.275rem + 0.3vw);
   font-size: calc(1.275rem + 0.3vw);
   line-height: inherit;
 }
+
 @media (min-width: 1200px) {
   legend {
     font-size: 1.5rem;
   }
 }
+
 legend + * {
   clear: left;
 }
@@ -374,7 +392,7 @@ legend + * {
   height: auto;
 }
 
-[type=search] {
+[type="search"] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
 }
@@ -424,5 +442,3 @@ progress {
 [hidden] {
   display: none !important;
 }
-
-/*# sourceMappingURL=bootstrap-reboot.css.map */
