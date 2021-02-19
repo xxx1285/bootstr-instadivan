@@ -6,3 +6,18 @@
 .container-fluid {
   max-width: 1780px;
 }
+
+.navbar-toggler[aria-expanded=true] .navbar-toggler-default {
+  display: none;
+}
+
+.navbar-toggler[aria-expanded=true] .navbar-toggler-toggled {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.navbar-toggler .navbar-toggler-toggled {
+  display: none;
+}

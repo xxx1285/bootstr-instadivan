@@ -11,3 +11,17 @@ header {
   .navbar
   {}
 }
+
+// Menu-Close
+.navbar-toggler[aria-expanded=true] .navbar-toggler-default {
+  display: none;
+}
+.navbar-toggler[aria-expanded=true] .navbar-toggler-toggled {
+  display: -ms-flexbox;
+  display: flex;
+}
+.navbar-toggler .navbar-toggler-toggled {
+  display: none;
+}
+// Topbar
+
