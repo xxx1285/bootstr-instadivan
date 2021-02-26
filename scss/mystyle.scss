@@ -1,25 +1,27 @@
 .figure {
-   // Ensures the caption's text aligns with the image.
-   display: inline-block;
-   font-size: 8px;
- }
-  
- .container-fluid {
+  // Ensures the caption's text aligns with the image.
+  display: inline-block;
+  font-size: 8px;
+}
+
+.container-fluid {
   max-width: 1780px;
 }
+
 header {
-  .navbar
-  {}
+  .navbar {}
 }
 
 // Menu-Close
 .navbar-toggler[aria-expanded=true] .navbar-toggler-default {
   display: none;
 }
+
 .navbar-toggler[aria-expanded=true] .navbar-toggler-toggled {
   display: -ms-flexbox;
   display: flex;
 }
+
 .navbar-toggler .navbar-toggler-toggled {
   display: none;
 }
@@ -40,40 +42,68 @@ header .pl-VisuallyHidden {
   word-break: normal;
   transform: translateZ(0);
 }
+
 // Topbar
 .topbar.navbar {
   background-color: #221f1f;
-  /*background-image: linear-gradient(
-    310deg
-    ,#7928ca,#ff0080);*/
+  .topbar-text {
+    .topbar-link {
+      font-size: 17px;
+      color: #fff;
+      text-decoration: none;
     }
-.topbar .navbar-nav-svg{
-  width: 21px;
-  height: 21px;
-  fill: white;
-  color:white
+  }
+  .navbar-nav-svg {
+    width: 21px;
+    height: 21px;
+    fill: white;
+    color: white
+  }
 }
+
+
 // Navbar
-.nav-main-header{background:#fff;}
-.navbar-collapse {width: 100%;}
-.navbar .nav-link.topmenu{font-size: 16px; padding: .3rem 1rem; color:black;}
-.navbar .nav-link.topmenu .arrow{fill:rgb(43, 116, 226)}
-.header-menu-nav {border-top: 1px solid #ccc;}
-@media only screen and (max-width: 992px){
-.header-menu-nav.navbar {
+.nav-main-header {
+  background: #fff;
+}
+
+.navbar-collapse {
+  width: 100%;
+}
+
+.navbar .nav-link.topmenu {
+  font-size: 16px;
+  padding: .3rem 1rem;
+  color: black;
+}
+
+.navbar .nav-link.topmenu .arrow {
+  fill: rgb(43, 116, 226)
+}
+
+.header-menu-nav {
+  border-top: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 992px) {
+  .header-menu-nav.navbar {
     padding: 0;
+  }
+
+  .menu .show .arrow:hover {
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+  }
 }
-.menu .show .arrow:hover {
-  -ms-transform: rotate(180deg); /* IE 9 */
-  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-  transform: rotate(180deg);
-}
-}
-@media only screen and (max-width: 992px){
-header.sticky-top2 {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 900;
-}
+
+@media only screen and (max-width: 992px) {
+  header.sticky-top2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+  }
 }

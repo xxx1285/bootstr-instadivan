@@ -41,12 +41,15 @@ header .pl-VisuallyHidden {
 
 .topbar.navbar {
   background-color: #221f1f;
-  /*background-image: linear-gradient(
-    310deg
-    ,#7928ca,#ff0080);*/
 }
 
-.topbar .navbar-nav-svg {
+.topbar.navbar .topbar-text .topbar-link {
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.topbar.navbar .navbar-nav-svg {
   width: 21px;
   height: 21px;
   fill: white;
