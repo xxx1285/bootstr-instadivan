@@ -23,10 +23,13 @@
 
   <link href="/css/min/mystyle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/creative.min.css">
+  <link rel="stylesheet" href="/js/flickity/flickity.css">
+
   <!----Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
   </script>
+  <script src="/js/flickity/flickity-docs.min.js"></script>
 
 
 
@@ -722,6 +725,37 @@
     <!---Navbar end-->
   </header>
 
+
+
+
+
+            <!-- Slider TODO:*********************intro -->
+            <div class="container-slider">
+              <div class="section-bg">
+                  <div class="hero-carousel flickity-enabled is-draggable"
+                      data-flickity='{&quot;lazyLoad&quot;: true, &quot;fade&quot;: false, &quot;autoPlay&quot;: 2500, &quot;pauseAutoPlayOnHover&quot;: false, &quot;wrapAround&quot;: true, &quot;imagesLoaded&quot;: true}'>
+                      <img decoding="async" class="hero-carousel__cell hero-carousel__cell--1"
+                          src="/img/test/dog-1920.jpg"
+                          srcset="/img/test/dog-1080.jpg 1080w, /img/test/dog-1920.jpg 1920w" sizes="100vw">
+                      <img decoding="async" sizes="(max-width: 1920px) 100vw, 1920px" srcset="
+                          /img/test2/intro-img3_pydwhf_c_scale,w_645.jpg 645w,
+                          /img/test2/intro-img3_pydwhf_c_scale,w_905.jpg 905w,
+                          /img/test2/intro-img3_pydwhf_c_scale,w_1119.jpg 1119w,
+                          /img/test2/intro-img3_pydwhf_c_scale,w_1305.jpg 1305w,
+                          /img/test2/intro-img3_pydwhf_c_scale,w_1484.jpg 1484w,
+                          /img/test2/intro-img3_pydwhf_c_scale,w_1920.jpg 1920w" src="/img/test2/IMG_4424.jpg"
+                          alt="">
+                      <img decoding="async" sizes="(max-width: 1920px) 100vw, 1920px" data-flickity-lazyload-srcset="
+                          /img/test2/intro-img3_pydwhf_c_scale,w_645.jpg 645w,
+                          /img/test2/intro-img3_pydwhf_c_scale,w_905.jpg 905w,
+                          /img/test2/intro-img3_pydwhf_c_scale,w_1119.jpg 1119w,
+                          /img/test2/intro-img3_pydwhf_c_scale,w_1305.jpg 1305w,
+                          /img/test2/intro-img3_pydwhf_c_scale,w_1484.jpg 1484w,
+                          /img/test2/intro-img3_pydwhf_c_scale,w_1920.jpg 1920w"
+                          data-flickity-lazyload-src="/img/test/dog-360.jpg" alt="">
+                  </div>
+              </div>
+          </div>
 
 
 
