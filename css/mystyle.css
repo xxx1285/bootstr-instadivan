@@ -49,10 +49,14 @@ header .pl-VisuallyHidden {
   text-decoration: none;
 }
 
+.topbar.navbar .topbar-text .btn-check:active + .btn-outline-light, .topbar.navbar .topbar-text .btn-check:checked + .btn-outline-light, .topbar.navbar .topbar-text .btn-outline-light.active, .topbar.navbar .topbar-text .btn-outline-light.dropdown-toggle.show, .topbar.navbar .topbar-text .btn-outline-light:active {
+  color: #000;
+}
+
 .topbar.navbar .navbar-nav-svg {
-  width: 21px;
-  height: 21px;
-  fill: white;
+  width: 20px;
+  height: 20px;
+  fill: var(--bs-yellow);
   color: white;
 }
 
@@ -97,5 +101,16 @@ header .pl-VisuallyHidden {
     position: sticky;
     top: 0;
     z-index: 900;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .dropdown:not(.nav-item) .dropdown-menu:before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #fff;
   }
 }
