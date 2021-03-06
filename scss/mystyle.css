@@ -1,5 +1,4 @@
 .figure {
-  // Ensures the caption's text aligns with the image.
   display: inline-block;
   font-size: 8px;
 }
@@ -8,17 +7,13 @@
   max-width: 1780px;
 }
 
-header {
-  .navbar {}
-}
-
-// Menu-Close
 .navbar-toggler[aria-expanded=true] .navbar-toggler-default {
   display: none;
 }
 
 .navbar-toggler[aria-expanded=true] .navbar-toggler-toggled {
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
 }
 
@@ -26,7 +21,6 @@ header {
   display: none;
 }
 
-//Header
 header .pl-VisuallyHidden {
   border: 0;
   padding: 0;
@@ -40,29 +34,27 @@ header .pl-VisuallyHidden {
   position: absolute;
   white-space: nowrap;
   word-break: normal;
-  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
-// Topbar
 .topbar.navbar {
   background-color: #221f1f;
-  .topbar-text {
-    .topbar-link {
-      font-size: 17px;
-      color: #fff;
-      text-decoration: none;
-    }
-  }
-  .navbar-nav-svg {
-    width: 25px;
-    height: 25px;
-    fill: white;
-    color: white
-  }
 }
 
+.topbar.navbar .topbar-text .topbar-link {
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+}
 
-// Navbar
+.topbar.navbar .navbar-nav-svg {
+  width: 25px;
+  height: 25px;
+  fill: white;
+  color: white;
+}
+
 .nav-main-header {
   background: #fff;
 }
@@ -78,7 +70,7 @@ header .pl-VisuallyHidden {
 }
 
 .navbar .nav-link.topmenu .arrow {
-  fill: rgb(43, 116, 226)
+  fill: #2b74e2;
 }
 
 .header-menu-nav {
@@ -89,9 +81,7 @@ header .pl-VisuallyHidden {
   .header-menu-nav.navbar {
     padding: 0;
   }
-
   .menu .show .arrow:hover {
-    -ms-transform: rotate(180deg);
     /* IE 9 */
     -webkit-transform: rotate(180deg);
     /* Chrome, Safari, Opera */
@@ -107,3 +97,4 @@ header .pl-VisuallyHidden {
     z-index: 900;
   }
 }
+/*# sourceMappingURL=mystyle.css.map */
