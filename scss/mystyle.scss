@@ -112,6 +112,11 @@ header .pl-VisuallyHidden {
   }
 }
 
+//Slider - text
+@media (max-width: 991.98px){
+  .bd-masthead h1 { font-size: 30px;}
+}
+
 // treugolnick
 @media (max-width: 991.98px){
 .dropdown:not(.nav-item) .dropdown-menu:before
